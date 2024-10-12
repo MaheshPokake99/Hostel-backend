@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const cors = require('cors');  // Import CORS
+const cors = require('cors'); 
 const authRoutes = require('./routes/auth');
 const ownerRoutes = require('./routes/owner');
 const customerRoutes = require('./routes/customer');
@@ -9,7 +9,6 @@ const app = express();
 
 dotenv.config();
 
-// Apply CORS middleware globally
 app.use(cors());
 
 app.use(express.json());
